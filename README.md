@@ -59,4 +59,10 @@ SSLEngine on
 SSLCertificateFile "crt/localhost/server.crt"
 SSLCertificateKeyFile "crt/localhost/server.key"
 </VirtualHost>
+
+<Directory "[insert document root here]">
+    Options Indexes FollowSymLinks Includes ExecCGI
+    AllowOverride All
+    Require all granted
+</Directory>
 ```
